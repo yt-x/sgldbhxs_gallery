@@ -1,0 +1,13 @@
+{
+  "name": "art-gallery",
+  "version": "1.0.0",
+  "description": "A modern art gallery website with image viewing and upload functionality",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000"
+  },
+  "keywords": ["gallery", "art", "images", "upload"],
+  "author": "",
+  "license": "MIT"
+}

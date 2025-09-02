@@ -1,0 +1,43 @@
+:root {
+  --warm-bg: #FDF4E3;
+  --nav-border: #EADDCD;
+  --text-primary: #333333;
+  --text-secondary: #555555;
+  --btn-primary-bg: #E58A49;
+  --btn-primary-hover: #D1793A;
+  --btn-secondary-bg: #F6EFE6;
+  --btn-secondary-hover: #EBE1D6;
+  
+  /* 与update.css保持一致的变量 */
+  --primary-color: #E58A49;
+  --background-color: #FDF4E3;
+  --surface-color: #FFFFFF;
+  --border-color: #EADDCD;
+  --subtle-text-color: #888888;
+}
+
+body {
+  font-family: 'Spline Sans', sans-serif;
+}
+
+.masonry-grid {
+  column-count: 3;
+  column-gap: 1rem;
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .masonry-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .masonry-grid {
+    column-count: 1;
+  }
+}

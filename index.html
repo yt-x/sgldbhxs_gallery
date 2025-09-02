@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Art Gallery</title>
+  <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;700&amp;display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/data.js"></script>
+  <script src="js/templates.js"></script>
+  <script src="js/app.js"></script>
+</head>
+
+<body class="bg-[var(--warm-bg)] text-[var(--text-primary)]">
+  <div class="flex flex-col min-h-screen">
+    <header class="sticky top-0 z-10 bg-[var(--warm-bg)]/80 backdrop-blur-sm">
+      <div class="container mx-auto px-6 py-4 flex items-center justify-between border-b border-[var(--nav-border)]">
+        <div class="flex items-center gap-3">
+          <svg class="h-8 w-8 text-[var(--btn-primary-bg)]" fill="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path clip-rule="evenodd"
+              d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM10.5 16.5L15 12L10.5 7.5V16.5Z"
+              fill-rule="evenodd"></path>
+          </svg>
+          <h1 class="text-2xl font-bold tracking-tight">Art Gallery</h1>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="pages/detail.html?id=1"
+            class="flex items-center justify-center gap-2 px-5 py-2.5 bg-[var(--btn-secondary-bg)] text-[var(--text-primary)] font-semibold rounded-lg shadow-md hover:bg-[var(--btn-secondary-hover)] transition-colors duration-300">
+            <span>Gallery</span>
+          </a>
+          <a href="pages/update.html"
+            class="flex items-center justify-center gap-2 px-5 py-2.5 bg-[var(--btn-primary-bg)] text-white font-semibold rounded-lg shadow-md hover:bg-[var(--btn-primary-hover)] transition-colors duration-300">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path clip-rule="evenodd"
+                d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM6.293 6.707a1 1 0 010-1.414l3-3a1 1 0 011.414 0l3 3a1 1 0 01-1.414 1.414L11 5.414V13a1 1 0 11-2 0V5.414L6.707 6.707a1 1 0 01-1.414 0z"
+                fill-rule="evenodd"></path>
+            </svg>
+            <span>Upload</span>
+          </a>
+          <button
+            class="p-2.5 bg-[var(--btn-secondary-bg)] rounded-lg hover:bg-[var(--btn-secondary-hover)] transition-colors duration-300">
+            <svg class="h-6 w-6 text-[var(--text-secondary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.096 2.572-1.065z"
+                stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="container mx-auto px-4 py-4 flex-grow">
+      <div class="masonry-grid">
+        <!-- 图片卡片将由JavaScript动态生成 -->
+      </div>
+    </main>
+  </div>
+
+</body>
+
+</html>
